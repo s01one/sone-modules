@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ config('app.name') }} - $THEME_NAME$</title>
+    <link rel="stylesheet" href="{{ asset('themes/$THEME_NAME$/Assets/css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        @yield('content')
+    </div>
+    <script src="{{ asset('themes/$THEME_NAME$/Assets/js/script.js') }}"></script>
+</body>
+</html>

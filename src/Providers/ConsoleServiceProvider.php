@@ -87,6 +87,9 @@ class ConsoleServiceProvider extends ServiceProvider
 
             // Make Packages
             Commands\Make\ModuleMakePackageCommand::class,
+          
+          	// Make Themes
+            Commands\Make\MakeThemeCommand::class,
 
             //Publish Commands
             Commands\Publish\PublishCommand::class,

@@ -136,7 +136,7 @@ class ModuleMakePackageCommand extends Command
 
     protected function generateFromStub($stubFile, $destinationPath, array $replacements = []): void
     {
-        $stubPath = base_path("vendor/sequelone/sone-modules/src/Commands/stubs/package/{$stubFile}");
+        $stubPath = base_path("vendor/s01one/sone-modules/src/Commands/stubs/package/{$stubFile}");
 
         if (!File::exists($stubPath)) {
             $this->error("Stub file '{$stubFile}' not found.");

@@ -1,0 +1,5 @@
+@extends('$THEME_NAME$::layouts.app')
+
+@section('content')
+<h1>Welcome to the $THEME_NAME$ theme!</h1>
+@endsection

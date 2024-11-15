@@ -1,0 +1,9 @@
+{
+    "name": "$THEME_NAME$",
+    "author": {
+        "name": "$AUTHOR_NAME$",
+        "email": "$AUTHOR_EMAIL$"
+    },
+    "version": "1.0.0",
+    "description": "A custom theme for your site"
+}

@@ -1,0 +1,13 @@
+<?php
+
+namespace SequelONE\sOne\Themes\$THEME_NAME$\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class $THEME_NAME$Controller extends Controller
+{
+    public function index()
+    {
+        return view('$THEME_NAME$::index');
+    }
+}
