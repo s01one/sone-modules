@@ -1,0 +1,41 @@
+{
+    "name": "$VENDOR$/$LOWER_NAME$",
+    "description": "",
+    "authors": [
+        {
+            "name": "$AUTHOR_NAME$",
+            "email": "$AUTHOR_EMAIL$"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "dont-discover": [],
+            "providers": [
+                "$MODULE_NAMESPACE$\\sOne\\Modules\\$STUDLY_NAME$\\$STUDLY_NAME$ServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        },
+        "merge-plugin": {
+            "include": [
+                "Modules/*/composer.json"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$\\sOne\\Modules\\$STUDLY_NAME$\\": "$APP_FOLDER_NAME$",
+            "$MODULE_NAMESPACE$\\sOne\\Modules\\$STUDLY_NAME$\\Database\\Factories\\": "database/factories/",
+            "$MODULE_NAMESPACE$\\sOne\\Modules\\$STUDLY_NAME$\\Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "$APP_FOLDER_NAME$/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$\\sOne\\Modules\\$STUDLY_NAME$\\Tests\\": "tests/"
+        }
+    }
+}

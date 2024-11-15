@@ -1,0 +1,33 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Route;
+
+class $PROVIDER$ extends ServiceProvider
+{
+    public function boot()
+    {
+        // Подключаем маршруты
+        $this->loadRoutesFrom(__DIR__ . '/Routes/web.php', '$LOWER_NAME$');
+
+        // Подключаем представления
+        $this->loadViewsFrom(__DIR__ . '/Resources/views', '$LOWER_NAME$');
+
+        // Подключаем хелперы
+        $this->loadHelpers();
+    }
+
+    protected function loadHelpers()
+    {
+        if (file_exists(__DIR__ . '/helpers.php')) {
+            require_once __DIR__ . '/helpers.php';
+        }
+    }
+
+    public function register()
+    {
+        //
+    }
+}

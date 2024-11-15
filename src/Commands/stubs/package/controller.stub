@@ -1,0 +1,13 @@
+<?php
+
+namespace $NAMESPACE$\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class $CONTROLLER$ extends Controller
+{
+    public function index()
+    {
+        return view('$ROUTE_PREFIX$::index');
+    }
+}

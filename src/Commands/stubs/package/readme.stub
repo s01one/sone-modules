@@ -1,0 +1,35 @@
+# $VENDOR_LOWER$/$MODULE_NAME$
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/$VENDOR$/$MODULE_NAME$.svg?style=flat-square)](https://packagist.org/packages/$VENDOR$/$MODULE_NAME$)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Scrutinizer Coverage](https://img.shields.io/scrutinizer/coverage/g/$VENDOR$/$MODULE_NAME$.svg?maxAge=86400&style=flat-square)](https://scrutinizer-ci.com/g/$VENDOR$/$MODULE_NAME$/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/$VENDOR$/$MODULE_NAME$.svg?style=flat-square)](https://packagist.org/packages/$VENDOR$/$MODULE_NAME$)
+
+## Install
+
+To install via Composer, run:
+
+``` bash
+composer require $VENDOR_LOWER$/$MODULE_NAME$
+```
+
+The package will automatically register a service provider and alias.
+
+Optionally, publish the package's configuration file by running:
+
+``` bash
+php artisan vendor:publish --provider="$VENDOR$\sOne\Modules\$CLASS_NAME$ServiceProvider"
+```
+
+## Documentation
+
+You'll find installation instructions and full documentation on [https://docs.sequel.one/](https://docs.sequel.one).
+
+## Credits
+
+- [SEQUEL.ONE](https://github.com/$VENDOR$)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
